@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#01080E">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/Ctext"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="c"
+                style="@style/numberstyle"
+                android:textColor="@color/teal_700"
+                />
+
+            <TextView
+                android:id="@+id/percentage"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="%"
+                style="@style/numberstyle"
+                android:textColor="@color/teal_700"
+                />
+
+            <ImageView
+                android:id="@+id/backspace"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_outline_backspace_24"
+                style="@style/numberstyle"
+                android:textColor="@color/teal_700"
+                android:scaleType="center"
+                 />
+
+            <TextView
+                android:id="@+id/multiply"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="x"
+                style="@style/numberstyle"
+                android:textColor="@color/teal_700" />
+
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/seven"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="7"
+                style="@style/numberstyle"
+                />
+
+            <TextView
+                android:id="@+id/eight"
+                style="@style/numberstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="8" />     
+
+            <TextView
+                android:id="@+id/nine"
+                style="@style/numberstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/minus"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="-"
+                style="@style/numberstyle"
+                android:textColor="@color/teal_700" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/four"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="4"
+                style="@style/numberstyle"
+                />
+
+            <TextView
+                android:id="@+id/five"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="5"
+                style="@style/numberstyle"
+                />
+
+            <TextView
+                android:id="@+id/six"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="6"
+                style="@style/numberstyle"
+                />
+
+            <TextView
+                android:id="@+id/plus"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="+"
+                style="@style/numberstyle"
+                android:textColor="@color/teal_700" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="1"
+                style="@style/numberstyle"
+                />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="2"
+                style="@style/numberstyle"
+                />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="3"
+                style="@style/numberstyle"
+                />
+
+            <TextView
+                android:id="@+id/devide"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="/"
+                style="@style/numberstyle"
+                android:textColor="@color/teal_700" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/doblezero"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="00"
+                style="@style/numberstyle"
+                />
+
+            <TextView
+                android:id="@+id/zero"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="0"
+                style="@style/numberstyle"
+                />
+
+            <TextView
+
+                android:id="@+id/point"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="."
+                style="@style/numberstyle"
+                />
+
+            <TextView
+                android:id="@+id/equals"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:text="="
+                style="@style/numberstyle"
+                android:textColor="@color/teal_700" />
+
+
+
+        </TableRow>
+        </TableLayout>
+
+
+    <TextView
+        android:id="@+id/expresion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:text=""
+        android:textColor="#D4FFFFFF"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+
+        android:text=""
+        android:textColor="#5B5C5D"
+        android:textSize="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tablelayout"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
